@@ -19,7 +19,6 @@ Note: Use the "Run tests" button to check your solution and mark it as complete.
 
 
 
-
 user_login = input('Enter your login: ')
 
 
