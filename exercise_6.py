@@ -25,17 +25,12 @@ while (guess != 1994):
     
     if guess < 1994:
         print('It was later than that!')
-        print('help')
-        #print(int(input('When was Python 1.0 released? ')))
+        guess = int(input('When was Python 1.0 released? '))
         
     elif guess > 1994:
-        print('It was earlier than that!')
-        print('help')
-        #print('When was Python 1.0 released? ')
+         print('It was earlier than that!')
+         guess = int(input('When was Python 1.0 released? '))
         
-   # print(int(input('When was Python 1.0 released? ')))
-    
-else:
-       print('Correct!')
+if guess == 1994:
+    print('Correct!')
         
-#print('stop')'''
