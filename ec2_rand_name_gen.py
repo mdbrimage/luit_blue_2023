@@ -1,7 +1,7 @@
 """
 Several departments share an AWS environment. You need to ensure that the EC2s are properly named and are unique so team members can easily tell who the EC2 instances belong to. 
 Use Python to create your unique EC2 names that the users can then attach to the instances. The Python Script should:
-1. All the user to input how many EC2 instances they want names for and output the same amount of unique names.
+1. Allow the user to input how many EC2 instances they want names for and output the same amount of unique names.
 2. Allow the user to input the name of their department that is used in the unique name.
 3. Generate random characters and numbers that will be included in the unique name.
 4. Push your code to GitHub and include the link in your LinkedIn write up.
@@ -14,3 +14,56 @@ Be sure to account for incorrect upper or lowercase letters in the correct depar
 COMPLEX
 Turn the above into a Function and execute the Function to verify it works.
 """
+import random 
+
+num_ec2 = int(input('How many EC2 instances require names? '))
+
+dept_name = input('What is your department? ')
+
+name = ''
+
+namecounter = 0
+
+
+for letter in dept_name[0]:
+        
+        name = name + dept_name[0:3]
+        namecounter +=1
+
+        
+print(name)
+
+        
+        
+print(namecounter)
+        
+
+
+'''
+while (namecounter < num_ec2):
+    
+    for letter in name[:3]:
+        
+        name = name + name[letter]
+        namecounter +=1
+        
+        print(namecounter)
+        
+   '''     
+#print(name)
+        
+#namecounter +=1
+        
+#print(namecounter)
+        
+#print(namecounter)
+    
+    #print(name)
+    
+    #print()
+    
+
+
+
+#while (len(name) < 8):
+    
