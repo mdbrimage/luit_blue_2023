@@ -29,7 +29,7 @@ for spend in spendings:
         
     else:
         low += 1
-        
-print('Numbers of months with low spendings:',low,'\b, normal spendings:',normal,'\b, high spendings:', hi,'\b.')
+         
+print('Numbers of months with low spendings: ' + str(low) + ', normal spendings: ' + str(normal) +', high spendings: ' + str(hi) + '.')
 
     
