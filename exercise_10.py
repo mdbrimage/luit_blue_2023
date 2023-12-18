@@ -10,18 +10,12 @@ Example 1: for unique([1, 1, 4, 5, 1]), the output should be [1, 4, 5]
 Example 2: for unique(['Mark', 'Mark', 'John', 'Anne']), the output should be  ['Mark', 'John', 'Anne']
 """
 
-non_unique1 = [1, 1, 4, 5, 1]
-
-non_unique2 = ['Mark', 'Mark', 'John', 'Anne']
-
 def unique(duplicate_list = []):
-    newList = []
+    newList = [] #creating a new list
     
-    for item in range(len(duplicate_list)):
-        if duplicate_list[item] not in newList:
-            newList.append(duplicate_list[item])
+    for item in range(len(duplicate_list)): #iterating over the list with duplicates
+        if duplicate_list[item] not in newList: #comparing the list with duplicates to the new list
+            newList.append(duplicate_list[item]) #appending values to the new list
             
     return newList
     
-print(unique(non_unique1))
-print(unique(non_unique2))
